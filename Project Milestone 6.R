@@ -1,0 +1,5 @@
+library(readr)
+Restaurants <- read_csv("Downloads/Restaurant_Scores_-_LIVES_Standard.csv")
+View(Restaurants)
+plot(`Analysis Neighborhoods`~ inspection_score, data = Restaurants, main = "Restaurant Scores in California data", xlab = "Number of Analysis Neighborhoods", ylab = "Restaurant Scores")
+cor(Restaurants$`Analysis Neighborhoods`, Restaurants$inspection_score)
